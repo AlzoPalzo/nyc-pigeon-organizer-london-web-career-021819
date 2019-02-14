@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
         if !(by_name[pigeon][attribute]) #if the hash for each pigeon does contain an array for a particular attribute, create one
           by_name[pigeon][attribute] = []
         end
-        by_name[pigeon][attribute] << value.to_s
+        by_name[pigeon][attribute] << value.to_s #pushes the value of each attribute into the hash
       end
     end
   end
